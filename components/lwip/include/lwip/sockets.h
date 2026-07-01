@@ -33,6 +33,9 @@ extern "C" {
  */
 int socketpair(int domain, int type, int protocol, int sv[2]);
 #endif
+/* 2026-07-01 Sid L.: add this for getting the required socket handle for low-level access. */
+/* NOTE: requires removal of "static" from the corresponding definition in ESP-LWIP's "socket.c" */
+struct lwip_sock * tryget_socket_unconn_nouse(int fd);
 
 static inline int accept(int s,struct sockaddr *addr,socklen_t *addrlen)
 { return lwip_accept(s,addr,addrlen); }
