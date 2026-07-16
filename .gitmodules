@@ -63,7 +63,7 @@
 
 [submodule "components/lwip/lwip"]
 	path = components/lwip/lwip
-	url = git@github.com:WebDust21/esp-lwip.git
+	url = https://github.com/WebDust21/esp-lwip.git
 
 [submodule "components/mqtt/esp-mqtt"]
 	path = components/mqtt/esp-mqtt
